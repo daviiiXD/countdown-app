@@ -1,2 +1,2 @@
 # countdown-app
-Saiba exatamente quantos dias faltam para um evento importante
+Saiba exatamente quantos dias faltam para um evento importante.
