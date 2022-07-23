@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
+body {
+    margin: 0 0 0 0;
+    padding: 0;
+    background-color: #14181F;
+    color: #4791EB;
+    font-family: 'Anonymous Pro', monospace;
+}
+.options {
+    display: flex;
+    justify-content: space-around;
+}
+input {
+    margin: 10% auto;
+    width: 70%;
+    padding: 3%;    
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    font-size: 5fr;
+}
+input {
+    border: 1px solid #4791EB;
+    border-radius: 5px;
+    width: 25%;
+    background: transparent;
+    color: #4791EB;
+    font-family: 'Anonymous Pro', monospace;
+}
+#event-name {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    transition: 1s;
+    text-align: center;
+    background: #4791EB;
+    color: #14181F;
+    
+    animation-name: eventName;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#event-name:hover {
+    width: 40%;
+    transition: 0.5s ease-out;
+}
+#event-date {
+    font-size: 10pt;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#start-button {
+    width: 15%;
+    background: #4791EB;
+    color: #14181F;
+}
+#container {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 20px;
+    width: 90%;
+    font-size: 100%;
+    
+    animation-name: container;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+    background: rgba( 71, 145, 235, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 17px );
+    -webkit-backdrop-filter: blur( 17px );
+    border-radius: 20px;
+
+}
+h1 {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+p {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+@keyframes eventName {
+    0% {
+          transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(17deg) rotateY(20deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+    }
+    25% {
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(-40deg) rotateY(-37deg) rotateZ(20deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+    }
+    50% {
+        transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(-4deg) rotateY(-28deg) rotateZ(62deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+    }
+    100% {
+          transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(17deg) rotateY(20deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+    }
+}
+@keyframes container {
+    0% {
+        top: 10%;
+    }
+    50% {
+        top: 30%;
+    }
+    100% {
+        top: 10%;
+    }
+}
+::-webkit-input-placeholder { color: #14181F; }
+:-moz-placeholder { /* Firefox 18- */ color: #14181F; }
+::-moz-placeholder { /* Firefox 19+ */ color: #14181F; }
+:-ms-input-placeholder { color: #14181F; } 
